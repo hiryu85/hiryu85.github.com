@@ -1,9 +1,58 @@
 <html>
  <head>
-  <title>Hiryu85@Github</title>
+  <title>Hiryu85 @ Github.com</title>
+  <style>
+   html, body {  }
+   a { text-decoration: none; border-bottom: 1px dotted gray; color: black; padding-bottom: 3px; }
+
+   /* Shortcuts */
+   .block { display: block }
+
+   /* Miscs */ 
+   figure {
+        background-color: white; display: inline-block; width: auto; min-width: 200px;
+        border: 1px solid black; box-shadow: 2px 2px gray;
+        -webkit-transform: rotate(15deg);
+        -o-transform: rotate(15deg);
+        -moz-transform: rotate(15deg);
+        padding: 20px;     
+    }
+     figcaption { font-family: georgia; font-size: 140%; padding: 20px 10px; }
+
+   *[itemprop="name"] { font-size: 4em; color: black; text-shadow: 1px 1px gray; font-size: verdana; }
+
+  /* Page elements */   
+   #container { 
+        text-align: center;
+        padding-top: 10%;
+        background-color: white;
+        margin: 0 20px 20px 20px;
+        overflow: auto; padding: 20px;
+   }
+   .gravatar { float: left }
+   .vcard { }
+        .follow-me { list-style-type: none }
+  </style>
  </head>
  <body>
-  <h1>Hiryu85</h1>
-  <p>Test</p>
+ <div id="container">
+  <section class="vcard" itemscope itemtype="http://www.schema.org/Person">
+   <figure class="gravatar">
+    <img src="http://www.gravatar.com/avatar/634c7a0fd4cf5d43307b14c4a56d9b68.png?s=200" alt="" />
+    <figcaption><em>hiryu85</em></figcaption>
+   </figure>
+  
+   <header>
+    <h3 itemprop="name">Mirko Chialastri</h3>
+    <span class="block" itemprop="nickname">hiryu85, void*</span>    
+    <span class="block" itemprop="email">chialastri.mirko@gmail.com</span>
+    
+    <ul class="follow-me">
+     <li><a rel="follow me" href="http://github.com/hiryu">Github</a></li>
+     <li><a itemprop="url" rel="follow me" href="http://blog.iamnothere.org">Blog</a></li>    
+    </ul>
+   </header>
+  </section>
+ </div>
  </body>
 </html>
